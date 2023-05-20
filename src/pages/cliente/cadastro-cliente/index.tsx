@@ -1,6 +1,6 @@
+import { Menu } from '@/components/Menu';
 import { TextField , Button} from '@mui/material';
 import { useState } from 'react';
-import styled from "@emotion/styled";
 
 const Cliente = () => {
   const [nome, setNome] = useState('');
@@ -62,10 +62,12 @@ const Cliente = () => {
           value={confSenha}
           onChange={(e) => setConfSenha(e.target.value)}
         />
-       
+
         <Button className="login-button" variant="contained" color="primary" type="submit">
           Cadastrar
         </Button>
+
+        
       </form>
     </div>
   );

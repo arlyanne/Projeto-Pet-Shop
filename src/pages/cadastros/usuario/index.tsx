@@ -15,7 +15,7 @@ const Usuario = () => {
   };
 
   return (
-    <div className="container ">
+    <div className="container">
       <form className="login-form" onSubmit={handleSubmit}>
         <h2>Cadastro Usuário</h2>
         {/* TEXTFIELD ELE É UM INPUT/CAIXA DE ENTRADA */}

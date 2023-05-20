@@ -15,7 +15,7 @@ const CadastroProduto = () => {
   return (
     <div className="container ">
       <form className="form" onSubmit={handleSubmit}>
-      <h2>Cadastro de Produto</h2>
+      <h2>Cadastro Produto</h2>
 
         {/* TEXTFIELD ELE É UM INPUT/CAIXA DE ENTRADA */}
         <TextField
