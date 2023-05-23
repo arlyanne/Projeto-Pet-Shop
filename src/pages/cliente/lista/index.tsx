@@ -3,7 +3,7 @@ import { Button, TableCell, TableRow } from '@mui/material';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-const Lista = () => {
+const ListaCliente = () => {
   const router = useRouter();
   const items = [
     { id: 1, nome: 'Item 1', cpf: '99999999', telefone:'99999999', email:'teste@gmail.com' },
@@ -26,8 +26,10 @@ const Lista = () => {
 
   return (
     <div>
-      <h1>Clientes</h1>
-      <Button variant='contained' onClick={novoCliente}> Novo Cliente </Button>
+       <div className='header'>
+              <h1>Clientes</h1>
+              <Button size='small' className='new' variant='contained' onClick={novoCliente}> Novo Cliente </Button>
+          </div>
           <DataTable campos={campos} linhas={
               items.map((e) =>
                  <tr key={e.id}>
@@ -42,4 +44,4 @@ const Lista = () => {
   );
 };
 
-export default Lista;
+export default ListaCliente;

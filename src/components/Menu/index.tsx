@@ -20,27 +20,27 @@ export const Menu = () => {
           <a href="#">Cadastro</a>
           <ul>
             <li>
-              <NextLink href="/cadastros/funcao" passHref>
+              <NextLink href="/cadastros/funcao/lista" passHref>
                 Função
               </NextLink>
             </li>
             <li>
-              <NextLink href="/cadastros/funcionario" passHref>
+              <NextLink href="/cadastros/funcionario/lista" passHref>
                 Funcionario
               </NextLink>
             </li>
             <li>
-              <NextLink href="/cadastros/produto" passHref>
+              <NextLink href="/cadastros/produto/lista" passHref>
                 Produto
               </NextLink>
             </li>
             <li>
-              <NextLink href="/cadastros/servico" passHref>
+              <NextLink href="/cadastros/servico/lista" passHref>
                 Serviço
               </NextLink>
             </li>
             <li>
-              <NextLink href="/cadastros/usuario" passHref>
+              <NextLink href="/cadastros/usuario/lista" passHref>
                 Usuário
               </NextLink>
             </li>

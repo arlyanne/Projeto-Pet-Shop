@@ -13,7 +13,6 @@ export default function DataTable(props: Props) {
             </th>
           ))
         }
-
       </thead>
       <tbody>
         {props.linhas}

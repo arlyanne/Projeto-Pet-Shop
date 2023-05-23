@@ -20,6 +20,17 @@ font-size: 12px;
   background: #2F4F4F;
 }
 
+button{
+  background: #2F4F4F !important;
+  height: 50px;
+}
+
+button.new{
+  background: #2F4F4F !important;
+  height: 50px;
+  width: 160px;
+}
+
 .container {
   margin-top: 30px;
   display: flex;
@@ -104,4 +115,11 @@ ul.menu ul li:hover > ul {
 ul.menu ul ul {
   top: 0;
   left: 100%;
+}
+
+
+.header{
+  justify-content:  space-between ;
+  display: flex; /* or inline-flex */
+  margin-top: 20px;
 }
