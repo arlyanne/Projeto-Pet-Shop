@@ -47,7 +47,7 @@ button.new{
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #fff;
-  width: 80%;
+  width: 70%;
 }
 .uploadButton {
   margin-top: 2px;
@@ -122,4 +122,22 @@ ul.menu ul ul {
   justify-content:  space-between ;
   display: flex; /* or inline-flex */
   margin-top: 20px;
+}
+
+.simple-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.simple-table th, .simple-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.simple-table th {
+  background-color: #f2f2f2;
+}
+
+.simple-table tr:nth-child(even) {
+  background-color: #f9f9f9;
 }

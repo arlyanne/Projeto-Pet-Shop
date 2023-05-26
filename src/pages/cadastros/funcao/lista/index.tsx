@@ -22,7 +22,7 @@ const Listafuncao = () => {
     ]
 
   const novaFuncao = () => {
-    router.push('/cadastros/funcao/cadastro-funcao');
+    router.push('cadastros/funcao/cadastro-funcao');
   };
 
   return (

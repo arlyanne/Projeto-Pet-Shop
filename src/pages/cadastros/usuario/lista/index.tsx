@@ -1,17 +1,25 @@
 import DataTable from '@/components/DataTable';
 import { Button, TableCell, TableRow } from '@mui/material';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const ListaUsuarios= () => {
   const router = useRouter();
-  const items = [
-    { id: 1, email: 'email@gmail.com', senha: '.......', novaSenha:'.......'},
-    { id: 2, email: 'email@gmail.com', senha: '.......', novaSenha:'.......'},
-    { id: 3, email: 'email@gmail.com', senha: '.......', novaSenha:'.......'},
-    { id: 4, email: 'email@gmail.com', senha: '.......', novaSenha:'.......'},
-    { id: 5, email: 'email@gmail.com', senha: '.......', novaSenha:'.......'},
-  ];
+  const [itens, setItens]= useState<any>([]); 
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/usuario')
+            .then(function (response) {
+                console.log(response)
+                setItens(response.data)
+            })
+        return () => {
+            [itens]
+        }
+    }, [itens])
+  
+  
 
     const campos = [
         { name: 'Email', id: 1 },
@@ -31,7 +39,7 @@ const ListaUsuarios= () => {
               <Button size='small' className='new' variant='contained' onClick={novoUsuario}> Novo Usuário</Button>
           </div>
           <DataTable campos={campos} linhas={
-              items.map((e) =>
+              itens.map((e:any) =>
                  <tr key={e.id}>
                     <td>{e.email}</td>
                     <td>{e.senha}</td>

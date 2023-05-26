@@ -1,39 +1,35 @@
 {
-  "clientes": [
+  "usuario": [
     {
-      "id": 1,
-      "nome": "Item 1",
-      "cpf": "",
-      "telefone": "",
-      "email": ""
+      "email": "maria@gmail.com",
+      "senha": "asde",
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Item 2",
-      "cpf": "",
-      "telefone": "",
-      "email": ""
+      "email": "amorapeidona@gmail.com",
+      "senha": "memeuechico",
+      "id": 2
     },
     {
-      "id": 3,
-      "nome": "Item 3",
-      "cpf": "",
-      "telefone": "",
-      "email": ""
+      "email": "amora@gmail.com",
+      "senha": "amorarlyanne",
+      "id": 3
+    }
+  ],
+  "cliente": [
+    {
+      "email": "arlyanne.lima.ferro@gmail.com",
+      "nome": "Arlyanne",
+      "cpf": "06048605366",
+      "telefone": "85998366994",
+      "id": 1
     },
     {
-      "id": 4,
-      "nome": "Item 4",
-      "cpf": "",
-      "telefone": "",
-      "email": ""
-    },
-    {
-      "id": 5,
-      "nome": "Item 5",
-      "cpf": "",
-      "telefone": "",
-      "email": ""
+      "email": "arlyanne.lima.ferro@gmail.com",
+      "nome": "Arlyanne Lima",
+      "cpf": "000000000",
+      "telefone": "85998366994",
+      "id": 2
     }
   ]
 }

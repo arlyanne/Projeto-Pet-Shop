@@ -54,7 +54,7 @@ export const Menu = () => {
 
         </li>
         <li>
-          <NextLink href="/agendamento" passHref>
+          <NextLink href="/agendamento/lista" passHref>
             Agendamento
           </NextLink>
         </ li>

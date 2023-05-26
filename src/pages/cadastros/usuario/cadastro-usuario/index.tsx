@@ -1,17 +1,29 @@
 import { TextField , Button} from '@mui/material';
 import { useState } from 'react';
 import styled from "@emotion/styled";
+import axios from 'axios';
+import { useRouter } from 'next/router';
 
 const Usuario = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [newpassword, setnewPassword] = useState('');
 
+  const router = useRouter ();
+
   const handleSubmit = (e:any) => {
     e.preventDefault();
-    // Lógica para autenticação
-    console.log('Email:', email);
-    console.log('Password:', password);
+    axios.post('http://localhost:3001/usuario', {
+      email: email,
+      senha: password
+    })
+    .then(function(response){
+      console.log(response)
+      router.push('lista')
+    })
+    .catch(function (error){
+      console.log(error)
+    })
   };
 
   return (

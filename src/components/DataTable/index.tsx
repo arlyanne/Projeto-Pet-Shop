@@ -4,7 +4,7 @@ interface Props {
 }
 export default function DataTable(props: Props) {
   return (
-    <table>
+    <table className="simple-table">
       <thead>
         {
           props.campos.map((e) => (

@@ -1,4 +1,4 @@
-import { TextField , Button} from '@mui/material';
+import { TextField , Button, Autocomplete} from '@mui/material';
 import { useState } from 'react';
 import styled from "@emotion/styled";
 import Endereco from '@/components/Endereco';
@@ -8,6 +8,12 @@ const Agendamento = () => {
   const [horario, setHorario] = useState('');
   const [animal, setAnimal] = useState('');
   const [servicos, setServicos] = useState([]);
+  const [funcionario, setFuncionario] = useState([]);
+
+  const top100Films = [
+    { label: 'Maria', year: 1994 },
+
+  ]
 
   const handleSubmit = (e:any) => {
     e.preventDefault();
@@ -21,15 +27,15 @@ const Agendamento = () => {
         {/* TEXTFIELD ELE É UM INPUT/CAIXA DE ENTRADA */}
         <TextField
           className="" 
-          label="Data Agendamento"
-          type="text"
+          label=""
+          type="date"
           value={dataAgend}
           onChange={(e) => setDataAgend(e.target.value)}
         />
          <TextField
           className="" 
-          label="Horário"
-          type="text"
+          label=""
+          type="time"
           value={horario}
           onChange={(e) => setHorario(e.target.value)}
         />
@@ -46,6 +52,13 @@ const Agendamento = () => {
           type="text"
           value={servicos}
           onChange={(e) => setServicos([])}
+        />
+        
+        <Autocomplete
+          disablePortal
+          id="combo-box-demo"
+          options={top100Films}
+          renderInput={(params) => <TextField {...params} label="Funcionário" />}
         />
         
        
