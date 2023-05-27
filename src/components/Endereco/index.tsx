@@ -16,28 +16,28 @@ return (
           className="" 
           label="Cep"
           type="text"
-          value={endereco.cep}
+          value={endereco?.cep}
           onChange={(e) => props.setEndereco({cep: e.target.value})}
         /> 
          <TextField
           className="" 
           label="Logradouro"
           type="text"
-          value={endereco.logradouro}
+          value={endereco?.logradouro}
           onChange={(e) => setLogradouro(e.target.value)}
         /> 
         <TextField
           className="" 
           label="Complemento"
           type="text"
-          value={endereco.complemento}
+          value={endereco?.complemento}
           onChange={(e) => setComplemento(e.target.value)}
         /> 
         <TextField
           className="" 
           label="Bairro"
           type="text"
-          value={endereco.bairro}
+          value={endereco?.bairro}
           onChange={(e) => setBairro(e.target.value)}
         /> 
     
